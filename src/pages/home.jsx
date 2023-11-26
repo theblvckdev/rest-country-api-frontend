@@ -8,7 +8,7 @@ const Home = () => {
       <section className='w-11/12 mx-auto'>
         <div className="mt-10">
           <div className="flex">
-            <div className="mr-auto basis-1/3">
+            <div className="mr-auto">
               <SearchInput />
             </div>
             <div>

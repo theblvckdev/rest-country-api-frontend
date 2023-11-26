@@ -7,12 +7,12 @@ const SearchInput = () => {
 
   return (
     <>
-      <form action="#" className={`flex items-center rounded-md px-5 shadow gap-3 ${themeChange ? 'bg-blue' : "bg-white"}`}>
+      <form action="#" className={`flex items-center rounded-md px-5 shadow w-full gap-3 ${themeChange ? 'bg-blue' : "bg-white"}`}>
         <div>
           <GoIcons.GoSearch className={`${themeChange ? 'text-gray-100' : 'text-blue'}`} />
         </div>
         <div>
-          <input type="text" className={`outline-none bg-transparent py-4 px-0 h-full box-border w-full ${themeChange ? 'text-gray-100' : 'text-blue'}`} placeholder='Search for a country...' />
+          <input type="text" className={`outline-none bg-transparent py-4 px-0 h-full box-border w-96 ${themeChange ? 'text-gray-100' : 'text-blue'}`} placeholder='Search for a country...' />
         </div>
       </form>
     </>
