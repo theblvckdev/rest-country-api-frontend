@@ -5,14 +5,12 @@ import { Link, useParams } from 'react-router-dom'
 
 const CountryInfo = () => {
   const [countries, setCountries] = useState([]);
+  // eslint-disable-next-line
   const [isLoading, setIsLoading] = useState(true);
   // eslint-disable-next-line
   const [error, setError] = useState('');
   const { themeChange } = useContext(ThemeContext)
   const { countryName } = useParams();
-
-  // get selected country borders
-  const borders = countries.map((country) => country.borders);
 
   // get countries from api by name
   const getCountryByName = async () => {
