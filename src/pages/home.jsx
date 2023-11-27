@@ -9,6 +9,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 const Home = () => {
   const [countries, setCountries] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  // eslint-disable-next-line
   const [error, setError] = useState('');
   const { themeChange } = useContext(ThemeContext)
 

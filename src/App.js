@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-      <div className={`${themeChange ? "bg-bgDark" : "bg-bgLight"} h-full`}>
+      <main className={`${themeChange ? "bg-bgDark" : "bg-bgLight"} min-h-screen pb-5`}>
         <Router>
           <Header />
           <Routes>
@@ -18,7 +18,7 @@ const App = () => {
             <Route exact path="/country/:countryName" element={<CountryInfo />} />
           </Routes>
         </Router>
-      </div>
+      </main>
     </>
   );
 };
